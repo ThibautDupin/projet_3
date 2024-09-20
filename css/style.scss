@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 70%;
+        height: 70%;
+    }
+}
+.location-bar{
+    display:flex;
+    justify-content: center    ;
+    flex-direction:row;
+    align-items: center;
+    background-color: lightgrey;
+    height:3vh;
+    gap:1rem;
+}
