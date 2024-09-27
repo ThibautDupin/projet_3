@@ -28,52 +28,37 @@
         </div>
         <div class="main-container">
             <div class="restaurant-menu">
-                <p>La palette du gout</p>
+                <div class="restaurant-name-fav">
+                    <p class="restaurant-name">La palette du gout</p>
+                    <div class="fav">
+                        <input type="checkbox" id="heartToggle1">
+                        <label for="heartToggle1">
+                            <i class="fas fa-solid fa-heart"></i>
+                            <i class="far fa-regular fa-heart"></i>
+                        </label>
+                    </div>
+                </div>
+
                 <div class="starter">
                     <p>ENTRÉES</p>
+                    <section></section>
                     <div class="article-container">
-                        <article>
+                        <input type="checkbox" id="toggleCheckbox" class="toggleCheckbox">
+                        <label for="toggleCheckbox" class="toggleLabel">Cliquez-moi</label>
+                        <div class="toggleContent">Je suis visible maintenant !</div>
 
-                            <h4>Fricassée d'escargots</h4>
+                        <article id="article1">
                             <div class=article-description-price>
-                                <p>Au piment d'Espelette</p>
-                                <p>25€</p>
+                                <h4 class="article-name">Fricassée d'escargots</h4>
+                                <p class="article-description">Au piment d'Espelette</p>
+                                <p class="article-price">25€</p>
                             </div>
+                            <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
                         </article>
-                        <article>
-                            <div>
-                                <h4>Fricassée d'escargots</h4>
-                                <p>Au piment d'Espelette</p>
-                            </div>
-                            <p>25€</p>
-                        </article>
-                        <article>
-                            <div>
-                                <h4>Fricassée d'escargots</h4>
-                                <p>Au piment d'Espelette</p>
-                            </div>
-                            <p>25€</p>
-                        </article>
+
+
                     </div>
                 </div>
-                <div class="starter">
-                    <p>PLATS</p>
-                    <div class="article-container">
-                        <article></article>
-                        <article></article>
-                        <article></article>
-                    </div>
-                </div>
-                <div class="starter">
-                    <p>DESSERTS</p>
-                    <div class="article-container">
-                        <article></article>
-                        <article></article>
-                        <article></article>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <footer>
         <p class="logo">Ohmyfood</p>

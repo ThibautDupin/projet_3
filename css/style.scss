@@ -68,17 +68,18 @@ main {
             }
         }
 
-        nav {
+        a {
             color: white;
             background: linear-gradient(#FF79DA, #9356DC);
             border-radius: 20px;
             padding: 0.9rem;
             font-size: small;
             box-shadow: 0 5px 5px 0 lightgrey;
+            text-decoration: none;
 
         }
 
-        nav:hover {
+        a:hover {
             filter: brightness(1.1);
             transition-duration: 0.5s;
         }
@@ -293,7 +294,7 @@ footer {
                 width: 100vw;
                 align-items: center;
                 justify-content: center;
-                height: 15vh;
+                height: 20vh;
 
                 h1 {
                     width: 65vw;
