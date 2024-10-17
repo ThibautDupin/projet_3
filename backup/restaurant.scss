@@ -1,0 +1,251 @@
+:root {
+    --main-bg-color: #F6F6F6;
+    --main-purple-color: #9356DC;
+    font-family: "Roboto";
+    font-weight: 400;
+    background-color: var(--main-bg-color);
+
+    h1 {
+        font-size: 20px;
+    }
+
+
+
+}
+@import '../layout/header';
+@import '../base/reset'
+
+
+// header {
+//     display: flex;
+//     height: 11vh;
+//     justify-content: flex-start;
+//     align-items: center;
+//     flex-direction: column;
+//     background-color: white;
+
+//     .logo {
+//         display: flex;
+//         flex-direction: row;
+//         width: 100vw;
+//         height: 7vh;
+//         align-items: center;
+
+//         i {
+//             font-size: 25px;
+//             margin-left: 1rem;
+//             color: grey
+//         }
+
+//         .img-container {
+//             width: 100vw;
+//             height:4vh;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             position: absolute;
+
+//             img {
+//                 height: 100%;
+//                 position: absolute;
+
+//             }
+
+//             ;
+//         }
+//     }
+
+//     .location-bar {
+//         display:none;
+//         height:4vh;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         gap:1rem;
+//         background-color: #EAEAEA;
+//         width:100vw;
+
+//     }
+
+
+// }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .img-container {
+        width: 100vw;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .main-container {
+        width: 100vw;
+        height: fit-content;
+        border-radius: 25px;
+        background-color: white;
+        margin-top: -45px;
+        position: relative;
+        background-color: var(--main-bg-color);
+
+        .restaurant-menu {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 20px
+        }
+
+        .restaurant-name-fav {
+            margin: 0px 0 10px 0;
+            display: flex;
+            flex-direction: row;
+            width: 90vw;
+            align-items: center;
+            justify-content: space-between;
+
+            .restaurant-name {
+                font-family: "Shrikhand", serif;
+                font-weight: 400 inherit;
+                font-size: 28px;
+            }
+
+
+
+            .fav {
+                i {
+                    font-size: 28px;
+                    cursor: pointer;
+                }
+
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                input[type="checkbox"]+label .far {
+                    display: inline;
+                }
+
+                input[type="checkbox"]:checked+label .far {
+                    display: none;
+                }
+
+                input[type="checkbox"]:checked+label .fas {
+                    display: inline;
+                    color: #9356DC;
+                }
+
+                .fas {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.starter {
+
+    section {
+        width: 40px;
+        border: turquoise 1px solid;
+        margin: 5px 0 10px;
+    }
+
+    p {
+        font-weight: 300;
+    }
+
+
+
+    .article-container {
+        text-decoration: none;
+        color: inherit;
+
+        .toggleCheckbox {
+            display: none;
+        }
+
+
+
+
+
+        article:target {
+            .validation {
+                display: flex;
+                width: 25%;
+                background-color: aqua;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+        }
+
+        article {
+            height: 72px;
+            width: 90vw;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 3px 0px 10px -5px grey;
+            gap: 0.5rem;
+            align-items: center;
+            overflow: hidden;
+
+            .article-description-price {
+                display: grid;
+                grid-template-areas:
+                    "name . ."
+                    "description . price";
+                justify-content: space-between;
+                text-overflow: ellipsis;
+                width: 100%;
+
+                .article-name {
+                    grid-area: name
+                }
+
+                ;
+
+                .article-price {
+                    grid-area: price
+                }
+
+                ;
+
+                .article-description {
+                    grid-area: description
+                }
+
+            }
+
+            .validation {
+                display: none;
+
+            }
+        }
+
+
+    }
+
+}
+
+.toggleCheckbox:checked+.toggleLabel+.validation {
+    display: flex;
+    width: 25%;
+    background-color: aqua;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
