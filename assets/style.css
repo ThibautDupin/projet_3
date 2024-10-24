@@ -4,7 +4,6 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: white;
 }
 header .logo {
   display: flex;
@@ -32,13 +31,13 @@ header .logo .img-container img {
 }
 header .location-bar {
   display: none;
-  height: 4vh;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   background-color: #EAEAEA;
-  width: 100vw;
+  width: 100%;
 }
 
 :root {
@@ -60,7 +59,7 @@ main .description-website {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
 }
 main .description-website .description-text-container {
   display: flex;
@@ -118,7 +117,7 @@ main .functioning .functioning-step div {
   justify-content: flex-start;
   background-color: var(--main-bg-color);
   border-radius: 25px;
-  width: 90vw;
+  width: 90%;
   height: 40px;
   gap: 10px;
   box-shadow: 0 3px 3px lightgrey;
@@ -148,7 +147,7 @@ main .restaurants {
 }
 main .restaurants h1 {
   margin-top: 2rem;
-  width: 90%;
+  width: 100%;
   font-weight: bold;
 }
 main .restaurants a {
@@ -214,8 +213,14 @@ footer {
   justify-content: space-between;
   flex-direction: column;
   height: 150px;
-  width: 100vw;
-  padding: 1rem;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+footer .text-container {
+  display: flex;
+  flex-direction: reverse-row;
+  gap: 1rem;
+  padding: 10px;
 }
 footer .logo {
   font-family: "Shrikhand", serif;
@@ -239,7 +244,7 @@ footer p {
   color: white;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   body {
     align-items: center;
     justify-content: center;
@@ -250,7 +255,7 @@ footer p {
     width: 100%;
   }
   body main {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,10 +266,10 @@ footer p {
   }
   body main .functioning {
     display: flex;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    height: 150px;
   }
   body main .functioning h1 {
     width: 65vw;
@@ -278,7 +283,15 @@ footer p {
     height: 50px;
   }
   body main .restaurants {
-    width: 75vw;
+    width: 75%;
+  }
+  body main .restaurants .restaurant-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
   }
   body main .restaurants .restaurant-card {
     width: 36vw;
@@ -290,7 +303,7 @@ footer p {
     gap: 1rem;
   }
 }
-@media (min-width: 600px) and (min-width: 801px) {
+@media (min-width: 900px) and (min-width: 801px) {
   body main .restaurant .restaurant-card {
     width: 36vw;
   }
