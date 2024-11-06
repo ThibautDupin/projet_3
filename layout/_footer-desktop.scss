@@ -1,0 +1,21 @@
+footer {
+
+    justify-content: flex-end;
+    align-items: end;
+
+    .text-container {
+        flex-direction: row-reverse;
+        gap: 4rem;
+
+        .legals-contact {
+            display: flex;
+            gap: 1rem
+        }
+
+        .suggest-partnership {
+            display: flex;
+            gap: 1rem
+        }
+    }
+
+}

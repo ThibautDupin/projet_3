@@ -1,0 +1,309 @@
+header {
+  display: flex;
+  height: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+header .logo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+}
+header .logo i {
+  font-size: 25px;
+  margin-left: 1rem;
+  color: grey;
+}
+header .logo .img-container {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+header .logo .img-container img {
+  height: 100%;
+  position: absolute;
+}
+header .location-bar {
+  display: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #EAEAEA;
+  width: 100%;
+  box-shadow: 0 4px 4px 0 lightgrey;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  color: white;
+}
+footer .text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+footer .logo {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+footer .suggest-restaurant {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: white;
+  font-weight: 600;
+  margin: 4px;
+}
+footer .partnership {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: white;
+  margin: 4px;
+}
+footer .partnership p {
+  font-weight: 600;
+}
+footer .legals-contact {
+  color: white;
+}
+footer .legals-contact p {
+  color: white;
+  margin: 4px;
+}
+
+:root {
+  --main-bg: #F6F6F6;
+  --purple: #9356DC;
+  --green: #008766;
+  --lightblue: #99E2D0;
+  --blue:#003A68;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  font-family: "Roboto";
+  font-weight: 400;
+  background-color: var(--main-bg);
+}
+:root h1 {
+  font-size: 20px;
+}
+
+header .location-bar {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .img-container {
+  width: 100vw;
+  position: relative;
+}
+main .img-container img {
+  width: 100%;
+}
+main .main-container {
+  width: 100vw;
+  height: fit-content;
+  border-radius: 25px;
+  background-color: white;
+  margin-top: -45px;
+  position: relative;
+  background-color: var(--main-bg);
+}
+main .main-container .restaurant-menu {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 20px;
+}
+main .main-container .restaurant-name-fav {
+  margin: 0px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main-container .restaurant-name-fav .restaurant-name {
+  font-family: "Shrikhand", serif;
+  font-weight: 400 inherit;
+  font-size: 28px;
+}
+main .main-container .restaurant-name-fav .fav i {
+  font-size: 28px;
+  cursor: pointer;
+}
+main .main-container .restaurant-name-fav .fav input[type=checkbox] {
+  display: none;
+}
+main .main-container .restaurant-name-fav .fav input[type=checkbox] + label .far {
+  display: inline;
+}
+main .main-container .restaurant-name-fav .fav input[type=checkbox]:checked + label .far {
+  display: none;
+}
+main .main-container .restaurant-name-fav .fav input[type=checkbox]:checked + label .fas {
+  display: inline;
+  color: #9356DC;
+}
+main .main-container .restaurant-name-fav .fav .fas {
+  display: none;
+}
+
+.step {
+  width: 100%;
+}
+.step section {
+  width: 40px;
+  border: var(--lightblue) 1px solid;
+  margin: 5px 0 10px;
+}
+.step p {
+  font-weight: 300;
+}
+.step .article-container {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.step .article-container .toggleCheckbox {
+  display: none;
+}
+.step .article-container article:hover .validation {
+  width: 25%;
+  transition: all 1s;
+}
+.step .article-container article:hover .article-name-description {
+  width: 70%;
+}
+.step .article-container article {
+  height: 72px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 3px 0px 10px -5px grey;
+  gap: 0.5rem;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.step .article-container article .article-name-description-price {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 5px 0 5px;
+}
+.step .article-container article .article-name-description-price .article-name-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.step .article-container article .article-name-description-price .article-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.step .article-container article .article-name-description-price .article-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.step .article-container article .article-price {
+  margin-right: 5px;
+  width: 5%;
+  align-self: end;
+}
+.step .article-container article .validation {
+  width: 0%;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--lightblue);
+}
+
+/*# sourceMappingURL=restaurant.css.map */
