@@ -1,6 +1,7 @@
 @use '../layout/header';
 @use'../layout/footer';
 @use'./variables';
+@use'../layout/animations';
 @import '../base/reset';
 
 :root {
@@ -23,15 +24,12 @@ header {
     }
 }
 
-
-/* Masquer le contenu par défaut */
 .content {
     opacity: 0;
     visibility: hidden;
 
 }
 
-/* Afficher le loader */
 .loader2{display:none}
 .loader {
     position: fixed;
@@ -82,28 +80,6 @@ header {
         }
     }
 
-
-    @keyframes scrolling {
-        0% {
-            transform: translateX(0%);
-
-        }
-
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
-    @keyframes reversescrolling {
-        0% {
-            transform: translateX(-50%);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
-
     .card {
         display: flex;
         flex-direction: column;
@@ -150,47 +126,6 @@ header {
     }
 }
 
-
-
-
-
-/* Animation pour masquer le loader après 1 seconde */
-@keyframes hideLoader {
-    0% {
-        opacity: 1;
-
-    }
-
-    50% {}
-
-    100% {
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-
-    }
-}
-
-/* Afficher le contenu après 1 seconde */
-body::after {
-    content: "";
-    display: none;
-}
-
-@keyframes showContent {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    100% {
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-
-
 .content {
     animation: showContent 2s forwards;
     animation-delay: 1s;
@@ -228,7 +163,7 @@ main {
         background-color: var(--main-bg);
 
         .restaurant-menu {
-            @keyframes appear { to { opacity: 1; } }
+            // @keyframes appear { to { opacity: 1; } }
             max-width: 650px;
             padding: 10px;
             display: flex;

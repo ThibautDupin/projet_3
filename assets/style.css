@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: flex;
   height: fit-content;
@@ -98,6 +99,53 @@ footer .legals-contact p {
   margin: 4px;
 }
 
+@keyframes scrolling {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes reversescrolling {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+/* Afficher le contenu après 1 seconde */
+body::after {
+  content: "";
+  display: none;
+}
+
+@keyframes showContent {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
 :root {
   font-family: "Roboto";
   font-weight: 400;
