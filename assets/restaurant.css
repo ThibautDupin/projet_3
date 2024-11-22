@@ -354,7 +354,7 @@ main .main-container .restaurant-name-fav .fav .fas {
   display: none;
 }
 .step .article-container article:hover .validation {
-  width: 20%;
+  width: 15%;
   transition: all 1s;
 }
 .step .article-container article:hover .article-name-description-price {

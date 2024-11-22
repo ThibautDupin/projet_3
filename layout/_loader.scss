@@ -1,14 +1,15 @@
-
 .loader {
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
+  width:100%;
+  animation: hideLoader 2s forwards;
   justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  animation: bigger 2s infinite;
-
+  /* 2 secondes d'animation */
   img {
+    animation: bigger 2s;
     object-fit: cover;
-    
+    width:50%
   }
 }
