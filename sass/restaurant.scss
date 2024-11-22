@@ -2,8 +2,8 @@
 @use'../layout/footer';
 @use'./variables';
 @use'../layout/animations';
-@import '../base/reset';
-
+@use '../base/reset';
+@use'../layout/footer-desktop'; 
 :root {
     font-family: "Roboto";
     font-weight: 400;
@@ -23,113 +23,20 @@ header {
         display: none;
     }
 }
-
+.content {
+    animation: showContent 1s forwards;
+    animation-delay: 1s;
+    width:100vw;
+    overflow:hidden;
+}
 .content {
     opacity: 0;
     visibility: hidden;
-
 }
 
-.loader2{display:none}
-.loader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 20px;
 
-    display: flex;
-    align-items: center;
-    background-color: var(--main-bg);
-    z-index: 1000;
-    gap: 1rem;
-    flex-direction: column;
-    animation: hideLoader 1s forwards;
-    animation-delay: 1s;
 
-    .carousel {
-        width: 100%;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-        max-height: 80vh;
 
-        .group {
-            display: flex;
-            gap: 20px;
-            padding-right: 20px;
-            will-change: transform;
-            animation: scrolling 2s linear;
-
-        }
-    }
-
-    .carousel2 {
-        width: 100%;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-        max-height: 80vh;
-
-        .group {
-            display: flex;
-            gap: 20px;
-            padding-right: 20px;
-            will-change: transform;
-            animation: reversescrolling 4s linear;
-
-        }
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        color: white;
-        border-radius: 24px;
-        box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        min-width: 100px;
-        max-height: 200px;
-        font-size: 120px;
-        font-family: Shrikhand;
-
-        p {
-            font-size: 30px
-        }
-
-        &:nth-child(1) {
-            background: var(--purple);
-        }
-
-        &:nth-child(2) {
-            background: var(--blue);
-        }
-
-        &:nth-child(3) {
-            background: var(--lightblue);
-        }
-
-        &:nth-child(4) {
-            background: var(--blue);
-        }
-
-        &:nth-child(5) {
-            background: var(--purple);
-        }
-
-        &:nth-child(6) {
-            background: var(--lightblue);
-        }
-
-    }
-}
-
-.content {
-    animation: showContent 2s forwards;
-    animation-delay: 1s;
-}
 
 
 main {
@@ -138,6 +45,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 5vh;
 
     .img-container {
         width: 100vw;
@@ -161,6 +69,7 @@ main {
         margin-top: -45px;
         position: relative;
         background-color: var(--main-bg);
+        padding-bottom: 3vh;
 
         .restaurant-menu {
             // @keyframes appear { to { opacity: 1; } }
@@ -260,12 +169,13 @@ main {
         article:hover {
             .validation {
 
-                width: 25%;
+                width: 20%;
                 transition: all 1s;
             }
 
-            .article-name-description {
-                width: 70%
+            .article-name-description-price {
+                width: 80%;
+                transition: all 1s;
             }
         }
 
@@ -285,7 +195,6 @@ main {
             .article-name-description-price {
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
                 justify-content: space-between;
                 width: 95%;
                 margin: 0 5px 0 5px;
@@ -314,6 +223,7 @@ main {
                 margin-right: 5px;
                 width: 5%;
                 align-self: end;
+                font-weight: 400;
             }
 
             .validation {
@@ -347,7 +257,3 @@ main {
     animation-delay:4s;
 }
 
-@media (min-width:768px) {
-
-    @import'../layout/footer-desktop'; 
-}
