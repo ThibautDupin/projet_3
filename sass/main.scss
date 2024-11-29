@@ -21,7 +21,7 @@
   top: 0;
   display: flex;
   animation: hideLoader 2s forwards;
-
+  flex-direction: column;
   /* 2 secondes d'animation */
   img {
     animation: bigger 2s;

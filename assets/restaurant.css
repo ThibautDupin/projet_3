@@ -90,6 +90,10 @@ footer .legals-contact p {
   color: white;
   margin: 4px;
 }
+footer .legals-contact a {
+  color: white;
+  text-decoration: none;
+}
 
 :root {
   --main-bg: #F6F6F6;
@@ -152,13 +156,13 @@ body::after {
 }
 @keyframes bigger {
   0% {
-    transform: scale(1);
+    transform: rotate(0deg) scale(0.8);
   }
   50% {
-    transform: scale(1.2);
+    transform: rotate(180deg) scale(1);
   }
   100% {
-    transform: scale(1);
+    transform: rotate(360deg) scale(0.8);
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 

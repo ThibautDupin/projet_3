@@ -4,8 +4,10 @@
   top: 0;
   display: flex;
   width:100%;
+  height:100%;
   animation: hideLoader 2s forwards;
   justify-content: center;
+  align-items: center;
   /* 2 secondes d'animation */
   img {
     animation: bigger 2s;
