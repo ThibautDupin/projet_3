@@ -1,6 +1,5 @@
-@mixin row-center{
+@mixin flex-center{
     display:flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
