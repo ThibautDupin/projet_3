@@ -339,12 +339,12 @@ main .main-container .restaurant-name-fav .fav .fas {
   animation: appear 1s forwards;
   width: 100%;
 }
-.step section {
+.step .section {
   width: 40px;
   border: var(--lightblue) 1px solid;
   margin: 5px 0 10px;
 }
-.step p {
+.step h3 {
   font-weight: 300;
 }
 .step .article-container {

@@ -206,8 +206,9 @@ body::after {
   font-weight: 400;
   background-color: var(--main-bg);
 }
-:root h1 {
-  font-size: 20px;
+:root h2 {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .loader {
@@ -256,7 +257,7 @@ main .description-website .description-text-container {
   align-items: center;
   gap: 15px;
 }
-main .description-website .description-text-container h1 {
+main .description-website .description-text-container h2 {
   font-weight: 500;
   font-size: 20px;
   max-width: 55vw;
@@ -284,7 +285,7 @@ main .functioning {
   margin-bottom: 1.5rem;
   background-color: white;
 }
-main .functioning h1 {
+main .functioning h2 {
   font-weight: bold;
   margin: 1.5rem;
 }
@@ -338,7 +339,7 @@ main .restaurants {
   flex-wrap: wrap;
   justify-content: center;
 }
-main .restaurants h1 {
+main .restaurants h2 {
   margin-top: 2rem;
   width: 100%;
   font-weight: bold;
@@ -348,8 +349,7 @@ main .restaurants a {
   display: block;
   color: inherit;
   text-decoration: none;
-  margin-bottom: 1rem;
-  height: 100%;
+  height: 75%;
 }
 main .restaurants .restaurant-card {
   display: flex;
@@ -361,7 +361,7 @@ main .restaurants .restaurant-card {
   height: 250px;
 }
 main .restaurants .img-container {
-  height: 75%;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -440,7 +440,7 @@ main .restaurants .restaurant-description .fas {
     justify-content: center;
     height: 150px;
   }
-  body main .functioning h1 {
+  body main .functioning h2 {
     width: 65vw;
   }
   body main .functioning .functioning-step {
