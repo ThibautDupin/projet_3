@@ -358,6 +358,7 @@ main .restaurants .restaurant-card {
   width: 340px;
   overflow: hidden;
   height: 250px;
+  margin-bottom: 1rem;
 }
 main .restaurants .img-container {
   height: 100%;
