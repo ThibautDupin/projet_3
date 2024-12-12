@@ -5,7 +5,6 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  position: inherits;
 }
 header .logo {
   text-decoration: none;

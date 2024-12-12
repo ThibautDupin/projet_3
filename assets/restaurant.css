@@ -5,7 +5,6 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  position: inherits;
 }
 header .logo {
   text-decoration: none;
@@ -310,7 +309,7 @@ main .main-container .restaurant-name-fav {
 }
 main .main-container .restaurant-name-fav .restaurant-name {
   font-family: "Shrikhand", serif;
-  font-weight: 400 inherit;
+  font-weight: 400;
   font-size: 28px;
 }
 main .main-container .restaurant-name-fav .fav i {
