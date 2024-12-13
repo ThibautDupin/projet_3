@@ -434,4 +434,11 @@ main .main-container .restaurant-name-fav .fav .fas {
   animation-delay: 4s;
 }
 
+@media (min-width: 768px) {
+  .main-container .restaurant-menu .restaurant-name-fav {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
 /*# sourceMappingURL=restaurant.css.map */

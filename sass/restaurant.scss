@@ -3,7 +3,8 @@
 @use'./variables';
 @use'../layout/animations';
 @use '../base/reset';
-@use'../layout/footer-desktop'; 
+@use'../layout/footer-desktop';
+
 :root {
     font-family: "Roboto";
     font-weight: 400;
@@ -23,12 +24,14 @@ header {
         display: none;
     }
 }
+
 .content {
     animation: showContent 1s forwards;
     animation-delay: 1s;
-    width:100vw;
-    overflow:hidden;
+    width: 100vw;
+    overflow: hidden;
 }
+
 .content {
     opacity: 0;
     visibility: hidden;
@@ -78,8 +81,8 @@ main {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
-            margin-top: 20px;    
-            
+            margin-top: 20px;
+
         }
 
         .restaurant-name-fav {
@@ -89,7 +92,7 @@ main {
             width: 90vw;
             align-items: center;
             justify-content: space-between;
-            
+
 
             .restaurant-name {
                 font-family: "Shrikhand", serif;
@@ -135,10 +138,10 @@ main {
 
 
 .step {
-    opacity: 0; 
+    opacity: 0;
     animation: appear 1s forwards;
     width: 100%;
-    
+
 
     .section {
         width: 40px;
@@ -158,7 +161,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        margin:5px;
+        margin: 5px;
 
         .toggleCheckbox {
             display: none;
@@ -246,16 +249,30 @@ main {
     }
 
 }
-.step:nth-child(1){
-    animation-delay:1.5s;
-}
-.step:nth-child(2){
-    animation-delay:2s;
-}
-.step:nth-child(3){
-    animation-delay:3s;
-}
-.step:nth-child(4){
-    animation-delay:4s;
+
+.step:nth-child(1) {
+    animation-delay: 1.5s;
 }
 
+.step:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.step:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.step:nth-child(4) {
+    animation-delay: 4s;
+}
+
+@media (min-width:768px) {
+    .main-container {
+        .restaurant-menu {
+            .restaurant-name-fav {
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    }
+}
