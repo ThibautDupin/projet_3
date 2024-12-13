@@ -408,7 +408,10 @@ main .restaurants .restaurant-description input[type=checkbox]:checked + label .
 }
 main .restaurants .restaurant-description input[type=checkbox]:checked + label .fas {
   display: inline;
-  color: #9356dc;
+  color: transparent;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .restaurants .restaurant-description .fas {
   display: none;

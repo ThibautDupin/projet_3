@@ -24,6 +24,7 @@
   display: flex;
   animation: hideLoader 2s forwards;
   flex-direction: column;
+
   /* 2 secondes d'animation */
   img {
     animation: bigger 2s;
@@ -169,7 +170,7 @@ main {
       display: block;
       color: inherit;
       text-decoration: none;
-      height:75%
+      height: 75%
     }
 
     .restaurant-card {
@@ -184,7 +185,7 @@ main {
     }
 
     .img-container {
-      height:100%;
+      height: 100%;
       overflow: hidden;
       position: relative;
 
@@ -239,7 +240,12 @@ main {
 
       input[type="checkbox"]:checked+label .fas {
         display: inline;
-        color: #9356dc;
+        color: transparent;
+        background: linear-gradient(to bottom, #ff79da, #9356dc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // color: #9356dc;
+
       }
 
       .fas {

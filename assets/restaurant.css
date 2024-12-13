@@ -268,7 +268,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5vh;
 }
 main .img-container {
   width: 100vw;
@@ -285,12 +284,13 @@ main .main-container {
   max-width: 1050px;
   width: 100%;
   height: fit-content;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   background-color: white;
   margin-top: -45px;
   position: relative;
   background-color: var(--main-bg);
-  padding-bottom: 3vh;
+  flex-direction: column;
+  align-items: center;
 }
 main .main-container .restaurant-menu {
   max-width: 650px;
@@ -300,6 +300,7 @@ main .main-container .restaurant-menu {
   gap: 1rem;
   margin-top: 20px;
   justify-content: center;
+  width: 95%;
 }
 main .main-container .restaurant-name-fav {
   margin: 0px 0 10px 0;
@@ -329,7 +330,10 @@ main .main-container .restaurant-name-fav .fav input[type=checkbox]:checked + la
 }
 main .main-container .restaurant-name-fav .fav input[type=checkbox]:checked + label .fas {
   display: inline;
-  color: #9356DC;
+  color: transparent;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .main-container .restaurant-name-fav .fav .fas {
   display: none;
@@ -355,7 +359,7 @@ main .main-container .restaurant-name-fav .fav .fas {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 5px;
+  justify-content: center;
 }
 .step .article-container .toggleCheckbox {
   display: none;
@@ -418,6 +422,24 @@ main .main-container .restaurant-name-fav .fav .fas {
   justify-content: center;
   color: white;
   background-color: var(--lightblue);
+}
+
+.validation-button {
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 20px;
+  padding: 0.9rem;
+  font-size: small;
+  box-shadow: 0 5px 5px 0 lightgrey;
+  text-decoration: none;
+  text-align: center;
+  width: 185px;
+  margin: 2rem 0;
+}
+
+.validation-button:hover {
+  filter: brightness(1.1);
+  transition-duration: 0.5s;
 }
 
 .step:nth-child(1) {

@@ -48,7 +48,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5vh;
+
 
     .img-container {
         width: 100vw;
@@ -67,15 +67,15 @@ main {
         max-width: 1050px;
         width: 100%;
         height: fit-content;
-        border-radius: 25px;
+        border-radius: 25px 25px 0 0;
         background-color: white;
         margin-top: -45px;
         position: relative;
         background-color: var(--main-bg);
-        padding-bottom: 3vh;
+        flex-direction: column;
+        align-items: center;
 
         .restaurant-menu {
-            // @keyframes appear { to { opacity: 1; } }
             max-width: 650px;
             padding: 10px;
             display: flex;
@@ -83,6 +83,7 @@ main {
             gap: 1rem;
             margin-top: 20px;
             justify-content: center;
+            width: 95%;
 
         }
 
@@ -123,7 +124,10 @@ main {
 
                 input[type="checkbox"]:checked+label .fas {
                     display: inline;
-                    color: #9356DC;
+                    color: transparent;
+                    background: linear-gradient(to bottom, #ff79da, #9356dc);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 .fas {
@@ -152,7 +156,7 @@ main {
     }
 
     h3 {
-        margin-left:5px;
+        margin-left: 5px;
         font-weight: 300;
     }
 
@@ -164,7 +168,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        margin: 5px;
+        justify-content: center;
 
         .toggleCheckbox {
             display: none;
@@ -250,6 +254,26 @@ main {
 
 
     }
+
+}
+
+.validation-button {
+    color: white;
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 20px;
+    padding: 0.9rem;
+    font-size: small;
+    box-shadow: 0 5px 5px 0 lightgrey;
+    text-decoration: none;
+    text-align: center;
+    width: 185px;
+    margin: 2rem 0;
+}
+
+.validation-button:hover {
+
+    filter: brightness(1.1);
+    transition-duration: 0.5s;
 
 }
 
