@@ -299,6 +299,7 @@ main .main-container .restaurant-menu {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 20px;
+  justify-content: center;
 }
 main .main-container .restaurant-name-fav {
   margin: 0px 0 10px 0;
@@ -342,9 +343,10 @@ main .main-container .restaurant-name-fav .fav .fas {
 .step .section {
   width: 40px;
   border: var(--lightblue) 1px solid;
-  margin: 5px 0 10px;
+  margin: 5px 0 10px 5px;
 }
 .step h3 {
+  margin-left: 5px;
   font-weight: 300;
 }
 .step .article-container {

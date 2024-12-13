@@ -82,6 +82,7 @@ main {
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 20px;
+            justify-content: center;
 
         }
 
@@ -146,10 +147,12 @@ main {
     .section {
         width: 40px;
         border: var(--lightblue) 1px solid;
-        margin: 5px 0 10px;
+        margin: 5px 0 10px 5px;
+
     }
 
     h3 {
+        margin-left:5px;
         font-weight: 300;
     }
 
