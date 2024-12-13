@@ -84,6 +84,7 @@ footer .partnership p {
 }
 footer .legals-contact {
   color: white;
+  align-items: center;
 }
 footer .legals-contact p {
   color: white;
@@ -352,6 +353,7 @@ main .main-container .restaurant-name-fav .fav .fas {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin: 5px;
 }
 .step .article-container .toggleCheckbox {
   display: none;

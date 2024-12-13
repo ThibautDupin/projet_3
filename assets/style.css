@@ -92,6 +92,7 @@ footer .partnership p {
 }
 footer .legals-contact {
   color: white;
+  align-items: center;
 }
 footer .legals-contact p {
   color: white;

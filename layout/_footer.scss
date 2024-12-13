@@ -6,7 +6,7 @@ footer {
     height: 150px;
     width: 100%;
     padding: 1rem 0 1rem 0;
-    color:white;
+    color: white;
 
     .text-container {
         display: flex;
@@ -18,36 +18,43 @@ footer {
         font-family: "Shrikhand", serif;
         font-weight: 400;
         font-style: normal;
-        color:white;
+        color: white;
     }
 
     .suggest-restaurant {
         display: flex;
         flex-direction: row;
         gap: 5px;
-        color:white;
+        color: white;
         font-weight: 600;
-        margin:4px
+        margin: 4px
     }
 
     .partnership {
         display: flex;
         flex-direction: row;
         gap: 5px;
-        color:white;
-        p{font-weight: 600;}
+        color: white;
+
+        p {
+            font-weight: 600;
+        }
+
         margin:4px
     }
 
-    .legals-contact{
-        color: white
-        ;
-        p{
-            color:white;
-            margin:4px
+    .legals-contact {
+        color: white;
+        align-items: center;
+
+        p {
+            color: white;
+            margin: 4px
         }
-        a{color:white;
-            text-decoration: none}
+
+        a {
+            color: white;
+            text-decoration: none
+        }
     }
 }
-
